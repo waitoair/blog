@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  </head>
+
+  <body>
+
+    <div>
+      <label for="article_title">Title</label><br>
+      <input type="text" name="article[title]" id="article_title">
+    </div>
+    <%= yield %>
+  </body>
+</html>
